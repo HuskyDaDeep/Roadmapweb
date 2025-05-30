@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação - Roadmap</title>
+    <link rel="stylesheet" href="../style.css"> </head>
+<body>
+    <div class="content-page">
+        <a href="../index.html" class="back-button">&larr; Voltar ao Roadmap</a>
+        <h1>Bloco 1: Fundamentos da Lógica de Programação</h1>
+        <p>Antes de mergulharmos em qualquer linguagem de programação, é fundamental entender como os computadores "pensam" e como organizamos nossas ideias para resolver problemas de forma sistemática. A **lógica de programação** é a base de tudo!</p>
+        <div>
+
+        
+        <h2>O que é Lógica de Programação?</h2>
+        <p>É a maneira de organizar seus pensamentos e a sequência de passos para que um problema seja resolvido de forma clara, precisa e finita, utilizando uma linguagem que o computador possa compreender.</p>
+        <p>O conceito central aqui é o **algoritmo**: uma sequência finita de instruções bem definidas e não ambíguas, usada para resolver um problema ou executar uma tarefa.</p>
+
+        <h2>Pensando em Algoritmos: Conceitos Chave</h2>
+        <ul>
+            <li>
+                <h3>Variáveis: Armazenando Informações</h3>
+                <p>Imagine uma **variável** como uma caixa rotulada onde você pode guardar diferentes tipos de informações. O rótulo é o nome da variável, e o que está dentro da caixa é o seu valor.</p>
+                <pre><code>
+// Exemplo em um pseudocódigo
+NOME = "João Silva"
+IDADE = 30
+TEM_CARRO = VERDADEIRO
+                </code></pre>
+            </li>
+            <li>
+                <h3>Tipos de Dados: A Natureza da Informação</h3>
+                <p>Os dados que guardamos nas variáveis podem ter diferentes "tipos", que definem o que podemos fazer com eles:</p>
+                <ul>
+                    <li>**Texto (String):** Sequências de caracteres (ex: "Olá mundo", "Meu nome é...").</li>
+                    <li>**Número (Number/Integer/Float):** Valores numéricos (ex: 10, 3.14, -5).</li>
+                    <li>**Booleano (Boolean):** Representa "verdadeiro" ou "falso" (ex: `true`, `false`).</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Operadores: Realizando Ações</h3>
+                <p>São símbolos que usamos para realizar operações com os dados:</p>
+                <ul>
+                    <li>**Aritméticos:** `+` (soma), `-` (subtração), `*` (multiplicação), `/` (divisão).</li>
+                    <li>**Comparação:** `==` (igual a), `!=` (diferente de), `>` (maior que), `<` (menor que), `>=` (maior ou igual), `<=` (menor ou igual).</li>
+                    <li>**Lógicos:** `E` (AND - todas as condições verdadeiras), `OU` (OR - pelo menos uma condição verdadeira), `NÃO` (NOT - inverte o valor booleano).</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Estruturas Condicionais (Se/Então/Senão): Tomando Decisões</h3>
+                <p>Permitem que seu algoritmo tome diferentes caminhos com base em uma condição. "Se algo for verdadeiro, faça isso; senão, faça aquilo."</p>
+                <pre><code>
+// Exemplo em pseudocódigo
+SE (temperatura > 25) ENTÃO
+    ESCREVER "Ligar ar-condicionado"
+SENÃO
+    ESCREVER "Manter ar-condicionado desligado"
+FIM_SE
+                </code></pre>
+            </li>
+            <li>
+                <h3>Estruturas de Repetição (Laços): Repetindo Tarefas</h3>
+                <p>Permitem que um conjunto de instruções seja executado várias vezes, até que uma condição seja satisfeita.</p>
+                <pre><code>
+// Exemplo em pseudocódigo (CONTADOR de 1 até 5)
+PARA CONTADOR DE 1 ATÉ 5 FAÇA
+    ESCREVER CONTADOR
+FIM_PARA
+
+// Saída: 1 2 3 4 5
+                </code></pre>
+            </li>
+        </ul>
+
+        <button onclick="markBlockAsCompleted('logica-programacao')">Marcar como Concluído</button>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
