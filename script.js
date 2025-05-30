@@ -74,19 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Tempo para a transição de opacidade
     });
 
-    // Lógica para marcar um bloco como concluído (chamado das páginas de conteúdo)
-    window.markBlockAsCompleted = function(blockId) {
-        if (!completedBlocks.includes(blockId)) {
-            completedBlocks.push(blockId);
-            localStorage.setItem('completedBlocks', JSON.stringify(completedBlocks));
-            alert(`Parabéns! Você completou o bloco: ${blockId}`);
-            // Opcional: Redirecionar de volta para a página principal ou para o próximo bloco
-            window.location.href = 'index.html';
-        } else {
-            alert('Este bloco já foi concluído!');
-        }
-    };
-
     // Verifica se o usuário já "logou" em uma sessão anterior
     // Para simplificar, se não houver um "logged_in" no localStorage, assume que não logou
     if (localStorage.getItem('logged_in') === 'true') {

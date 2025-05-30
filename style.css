@@ -142,11 +142,23 @@ body {
     line-height: 1.5;
 }
 
-/* Indicador de progresso no card (opcional, pode ser uma pequena barra ou ícone) */
 .roadmap-card.completed {
-    border: 3px solid #4CAF50; /* Borda verde para completado */
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+    opacity: 0.6;
+    position: relative;
 }
+
+.roadmap-card.completed::after {
+    content: "✓ Concluído";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: green;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
 
 /* Estilos para as páginas de conteúdo (ex: logica-programacao.html) */
 .content-page {
@@ -200,6 +212,12 @@ body {
     margin-left: 25px;
     margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+    .content-page ul {
+        padding-left: 20px; /* afasta o conteúdo da borda */
+        margin-left: 0;     /* remove o margin-left se quiser alinhar melhor */
+    }
+}
 
 .content-page li {
     margin-bottom: 8px;
@@ -245,4 +263,23 @@ body {
 
 .back-button:hover {
     color: #1976D2;
+}
+.forward-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.forward-button:hover {
+    color: #1976D2;
+}
+.underButton{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+    
 }
