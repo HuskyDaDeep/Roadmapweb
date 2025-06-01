@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let chatHistory = [];
             chatHistory.push({ role: "user", parts: [{ text: promptContent }] });
             const payload = { contents: chatHistory };
-            const apiKey = "AIzaSyDszvGUbkhV6W3IAxoehXmMD6NKDpRRLxg"; // Deixe como está, a chave será fornecida em tempo de execução pelo ambiente
+            const apiKey = ""; // Deixe como está, a chave será fornecida em tempo de execução pelo ambiente
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             console.log("A enviar pedido à API Gemini...");
