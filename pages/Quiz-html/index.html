@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML Interativo (Novo)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body >
+    <div class="quiz-container bg-white p-8 rounded-xl shadow-2xl w-full max-w-2xl transform transition-all duration-500 ease-in-out scale-95">
+        <h1 class="text-4xl font-extrabold text-center mb-8 text-gray-900 leading-tight">Quiz de HTML Interativo</h1>
+
+        <form id="quiz-form" class="space-y-8">
+            <div >
+                <p >1. Qual a sigla para HTML?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q1" value="a" > Hyper Text Markup Language
+                    </label>
+                    <label >
+                        <input type="radio" name="q1" value="b" > High Tech Modern Language
+                    </label>
+                    <label >
+                        <input type="radio" name="q1" value="c" > Home Tool Management Links
+                    </label>
+                    <label >
+                        <input type="radio" name="q1" value="d" > Hyperlink and Text Markup
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >2. Qual tag HTML é usada para criar um parágrafo?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q2" value="a" > &lt;p&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q2" value="b" > &lt;para&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q2" value="c" > &lt;text&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q2" value="d" > &lt;pgraph&gt;
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >3. Qual elemento HTML define o título de um documento (exibido na aba do navegador)?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q3" value="a" > &lt;body&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q3" value="b" > &lt;head&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q3" value="c" > &lt;title&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q3" value="d" > &lt;meta&gt;
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >4. Qual atributo HTML é usado para especificar o caminho de um arquivo de imagem?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q4" value="a" > href
+                    </label>
+                    <label >
+                        <input type="radio" name="q4" value="b" > src
+                    </label>
+                    <label >
+                        <input type="radio" name="q4" value="c" > link
+                    </label>
+                    <label >
+                        <input type="radio" name="q4" value="d" > url
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >5. Qual tag HTML é usada para criar uma lista não ordenada (com marcadores)?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q5" value="a" > &lt;ol&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q5" value="b" > &lt;li&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q5" value="c" > &lt;ul&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q5" value="d" > &lt;dl&gt;
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >6. Qual é a forma correta de comentar um código HTML?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q6" value="a" > // Este é um comentário
+                    </label>
+                    <label >
+                        <input type="radio" name="q6" value="b" > &lt;!-- Este é um comentário --&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q6" value="c" > /* Este é um comentário */
+                    </label>
+                    <label >
+                        <input type="radio" name="q6" value="d" > # Este é um comentário
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >7. Qual tag HTML é usada para criar um link (hyperlink)?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q7" value="a" > &lt;link&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q7" value="b" > &lt;hlink&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q7" value="c" > &lt;a&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q7" value="d" > &lt;url&gt;
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >8. Qual elemento HTML é usado para definir o cabeçalho principal de uma página (o mais importante)?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q8" value="a" > &lt;h1&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q8" value="b" > &lt;h6&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q8" value="c" > &lt;head&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q8" value="d" > &lt;header&gt;
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >9. Qual é o propósito do atributo `alt` na tag `&lt;img&gt;`?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q9" value="a" > Definir o alinhamento da imagem.
+                    </label>
+                    <label >
+                        <input type="radio" name="q9" value="b" > Fornecer um texto alternativo para a imagem, para fins de acessibilidade.
+                    </label>
+                    <label >
+                        <input type="radio" name="q9" value="c" > Alterar o tamanho da imagem.
+                    </label>
+                    <label >
+                        <input type="radio" name="q9" value="d" > Adicionar um link à imagem.
+                    </label>
+                </div>
+            </div>
+
+            <div >
+                <p >10. Qual tag HTML é usada para criar uma quebra de linha simples (sem iniciar um novo parágrafo)?</p>
+                <div >
+                    <label >
+                        <input type="radio" name="q10" value="a" > &lt;break&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q10" value="b" > &lt;lb&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q10" value="c" > &lt;br&gt;
+                    </label>
+                    <label >
+                        <input type="radio" name="q10" value="d" > &lt;newline&gt;
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-quiz-btn" class="w-full bg-gradient-to-r from-green-500 to-teal-600 text-white py-4 px-6 rounded-lg font-bold text-xl hover:from-green-600 hover:to-teal-700 transition-all duration-300 shadow-lg transform hover:scale-105">
+                Enviar Quiz
+            </button>
+        </form>
+
+        <div id="results-section" class="mt-10 p-6 bg-gray-50 rounded-xl shadow-inner text-center text-gray-800 hidden border border-gray-200">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Resultados do Quiz</h2>
+            <p id="score-display" class="text-4xl font-extrabold text-blue-700 mb-6 animate-pulse"></p>
+            <p id="correct-count" class="text-xl text-green-700 mb-2"></p>
+            <p id="incorrect-count" class="text-xl text-red-700 mb-4"></p>
+
+            <button id="generate-explanation-btn" class="mt-6 w-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-3 px-6 rounded-lg font-bold text-lg hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-md transform hover:scale-105">
+                ✨ Gerar Explicações Detalhadas
+            </button>
+            <div id="explanation-loading" class="mt-4 text-center text-gray-600 hidden">
+                <div class="spinner"></div> A gerar explicações...
+            </div>
+            <div id="explanations" class="mt-8 text-left space-y-5">
+                </div>
+            <button id="restart-quiz-btn" class="mt-8 w-full bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-bold text-lg hover:bg-gray-400 transition-all duration-300 shadow-md transform hover:scale-105">
+                Reiniciar Quiz
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
