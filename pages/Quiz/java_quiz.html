@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Java</title>
+    <!-- Link para o ficheiro CSS comum para estilização -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- O atributo data-quiz-type informa ao JavaScript qual quiz carregar -->
+<body data-quiz-type="java">
+    <div class="quiz-container">
+        <h1 id="quiz-title">Quiz de Java Básico</h1>
+        <p> Bem Vindos ao seu quiz de java, aonde o filho chora e a mãe não vê, vamos ver se você sabe alguma coisa de java, ou se é só mais um programador que não sabe nada de java.	
+        </p>
+
+        <form id="quiz-form">
+            <!-- As perguntas estão agora diretamente aqui no HTML -->
+            <div id="questions-container">
+                <!-- Pergunta 1 -->
+                <div class="question-block">
+                    <p>1. Qual palavra-chave é usada para definir uma classe em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">    
+                            <input type="radio" name="q1" value="a"> Class
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="b"> class
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="c"> newClass
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="d"> defineClass
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="question-block">
+                    <p>2. Qual é o ponto de entrada principal de um programa Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="a"> start()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="b"> main()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="c"> run()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="d"> execute()
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="question-block">
+                    <p>3. Qual das seguintes opções é um tipo de dados primitivo em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="a"> String
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="b"> Array
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="c"> int
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="d"> Object
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="question-block">
+                    <p>4. Qual palavra-chave é usada para herança em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="a"> implements
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="b"> inherits
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="c"> extends
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="d"> uses
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="question-block">
+                    <p>5. Qual método é usado para imprimir na consola em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="a"> System.out.print()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="b"> console.log()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="c"> print()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="d"> System.write()
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 6 -->
+                <div class="question-block">
+                    <p>6. Qual conceito de POO (Programação Orientada a Objetos) se refere à capacidade de um objeto assumir várias formas?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="a"> Encapsulamento
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="b"> Herança
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="c"> Abstração
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="d"> Polimorfismo
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 7 -->
+                <div class="question-block">
+                    <p>7. Qual palavra-chave é usada para criar uma constante em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="a"> const
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="b"> final
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="c"> static
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="d"> immutable
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 8 -->
+                <div class="question-block">
+                    <p>8. Qual estrutura de controlo é usada para executar um bloco de código repetidamente enquanto uma condição é verdadeira?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="a"> if-else
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="b"> switch
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="c"> for loop
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="d"> while loop
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 9 -->
+                <div class="question-block">
+                    <p>9. O que o Garbage Collector faz em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="a"> Libera a memória de objetos não utilizados
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="b"> Otimiza o código em tempo de execução
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="c"> Compila o código-fonte
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="d"> Gere threads
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 10 -->
+                <div class="question-block">
+                    <p>10. Qual é a principal diferença entre `ArrayList` e `LinkedList` em Java?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="a"> `ArrayList` é mais rápido para inserções e exclusões no meio da lista.
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="b"> `LinkedList` é baseado em array e `ArrayList` em nós encadeados.
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="c"> `ArrayList` é mais eficiente para acesso aleatório, `LinkedList` para inserções/exclusões no início/fim.
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="d"> Não há diferença significativa.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-quiz-btn">
+                Enviar Quiz
+            </button>
+        </form>
+
+        <div id="results-section" class="hidden">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Resultados do Quiz</h2>
+            <p id="score-display"></p>
+            <p id="correct-count"></p>
+            <p id="incorrect-count"></p>
+
+            <button id="generate-explanation-btn">
+                ✨ Gerar Explicações Detalhadas
+            </button>
+            <div id="explanation-loading" class="hidden">
+                <div class="spinner"></div> A gerar explicações...
+            </div>
+            <div id="explanations">
+                <!-- As explicações serão exibidas aqui -->
+            </div>
+            <button id="restart-quiz-btn">
+                Reiniciar Quiz
+            </button>
+        </div>
+    </div>
+    <div id="custom-alert-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="custom-alert-message"></p>
+            <button id="custom-alert-close-btn" class="modal-close-button">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

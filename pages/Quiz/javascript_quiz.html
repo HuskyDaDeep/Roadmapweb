@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de JavaScript</title>
+    <!-- Link para o ficheiro CSS comum para estilização -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- O atributo data-quiz-type informa ao JavaScript qual quiz carregar -->
+<body data-quiz-type="javascript">
+    <div class="quiz-container">
+        <h1 id="quiz-title" class="quiz-title">Quiz de JavaScript Básico</h1>
+        
+        <form id="quiz-form">
+            <!-- As perguntas estão agora diretamente aqui no HTML -->
+            <div id="questions-container">
+                <!-- Pergunta 1 -->
+                <div class="question-block">
+                    <p>1. Qual palavra-chave é usada para declarar uma variável em JavaScript?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="a"> var
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="b"> let
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="c"> const
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="d"> Todas as anteriores
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="question-block">
+                    <p>2. Qual método é usado para imprimir algo na consola do navegador?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="a"> console.log()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="b"> print()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="c"> display()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="d"> write()
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="question-block">
+                    <p>3. O que o operador `===` faz em JavaScript?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="a"> Compara dois valores, ignorando o tipo
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="b"> Compara dois valores e os seus tipos
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="c"> Atribui um valor
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="d"> Compara três valores
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="question-block">
+                    <p>4. Qual é a forma correta de escrever um comentário de uma única linha em JavaScript?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="a"> &lt;!-- Comentário --&gt;
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="b"> /* Comentário */
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="c"> // Comentário
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="d"> # Comentário
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="question-block">
+                    <p>5. Qual objeto global contém funções e propriedades matemáticas?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="a"> Math
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="b"> Number
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="c"> Calculate
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="d"> Calc
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 6 -->
+                <div class="question-block">
+                    <p>6. Qual método String retorna o comprimento de uma String?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="a"> length()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="b"> size()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="c"> count()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="d"> length
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 7 -->
+                <div class="question-block">
+                    <p>7. Qual das opções é uma função de callback?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="a"> Uma função que é passada como argumento para outra função
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="b"> Uma função que chama a si mesma recursivamente
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="c"> Uma função que retorna outra função
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="d"> Uma função que é executada após um evento
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 8 -->
+                <div class="question-block">
+                    <p>8. Como se declara um array em JavaScript?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="a"> var myArray = {};
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="b"> var myArray = [];
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="c"> var myArray = ();
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="d"> var myArray = &lt;&gt;;
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 9 -->
+                <div class="question-block">
+                    <p>9. O que o método `querySelector()` retorna?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="a"> Uma coleção de elementos
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="b"> O primeiro elemento que corresponde a um seletor CSS
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="c"> Todos os elementos que correspondem a um seletor CSS
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="d"> Um valor booleano
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 10 -->
+                <div class="question-block">
+                    <p>10. Qual função é usada para atrasar a execução de um código?</p>
+                    <div class="options-group">
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="a"> setTimeout()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="b"> delay()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="c"> wait()
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="d"> pause()
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-quiz-btn">
+                Enviar Quiz
+            </button>
+        </form>
+
+        <div id="results-section" class="hidden">
+            <h2 class="results-title">Resultados do Quiz</h2>
+            <p id="score-display"></p>
+            <p id="correct-count"></p>
+            <p id="incorrect-count"></p>
+
+            <button id="generate-explanation-btn">
+                ✨ Gerar Explicações Detalhadas
+            </button>
+            <div id="explanation-loading" class="hidden">
+                <div class="spinner"></div> A gerar explicações...
+            </div>
+            <div id="explanations">
+                <!-- As explicações serão exibidas aqui -->
+            </div>
+            <button id="restart-quiz-btn">
+                Reiniciar Quiz
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom Modal para Mensagens de Alerta -->
+    <div id="custom-alert-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="custom-alert-message"></p>
+            <button id="custom-alert-close-btn" class="modal-close-button">OK</button>
+        </div>
+    </div>
+
+    <!-- Link para o ficheiro JavaScript comum que contém toda a lógica do quiz -->
+    <script src="script.js"></script>
+</body>
+</html>
