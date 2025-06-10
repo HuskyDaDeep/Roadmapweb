@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Conceitos Intermediários e DOM</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="content-page">
+        <a href="../index.html" class="back-button">&larr; Voltar ao Roadmap</a>
+        <h1>Bloco Extra: Aprofundando em JavaScript</h1>
+
+        <h2>JavaScript: Funções, Arrays e Objetos - O Poder de Organização</h2>
+        <p>Com os fundamentos em mente, é hora de aprender a organizar seu código e trabalhar com coleções de dados de forma eficiente.</p>
+
+        <h3>Funções</h3>
+        <p>Funções são blocos de código reutilizáveis que realizam uma tarefa específica. Elas tornam seu código modular e fácil de manter.</p>
+        <ul>
+            <li><b>Declaração:</b> <code>function nomeDaFuncao(parametros) { /* código */ }</code></li>
+            <li><b>Funções Anônimas/Arrow Functions:</b> Sintaxe mais concisa para funções.</li>
+            <li><b>Escopo:</b> Entender onde as variáveis podem ser acessadas (global vs. local).</li>
+            <li><b>Retorno:</b> Funções podem retornar valores.</li>
+        </ul>
+
+        <h3>Arrays (Listas de Dados)</h3>
+        <p>Arrays são coleções ordenadas de itens. São incrivelmente úteis para gerenciar listas de qualquer coisa.</p>
+        <ul>
+            <li><b>Criação:</b> <code>const lista = [1, "dois", true];</code></li>
+            <li><b>Métodos Comuns:</b> <code>.push()</code> (adicionar), <code>.pop()</code> (remover último), <code>.length</code> (tamanho), <code>.map()</code>, <code>.filter()</code>, <code>.reduce()</code> (para operações avançadas).</li>
+        </ul>
+
+        <h3>Objetos (Dados Estruturados)</h3>
+        <p>Objetos são coleções de pares chave-valor, perfeitos para representar entidades complexas (como um usuário, um produto, etc.).</p>
+        <ul>
+            <li><b>Criação:</b> <code>const usuario = { nome: "Ana", idade: 25 };</code></li>
+            <li><b>Acesso:</b> <code>usuario.nome</code> ou <code>usuario['idade']</code>.</li>
+        </ul>
+
+        <h2>Manipulação do DOM (Document Object Model)</h2>
+        <p>O DOM é a ponte entre seu JavaScript e o conteúdo HTML da sua página. É através dele que você pode alterar texto, imagens, estilos e muito mais, tornando a página interativa.</p>
+        <p>Pense no DOM como uma representação em árvore da sua página HTML. Cada elemento (parágrafo, imagem, botão) é um "nó" nessa árvore.</p>
+
+        <h3>Como Acessar Elementos HTML:</h3>
+        <ul>
+            <li><code>document.getElementById('id-do-elemento')</code></li>
+            <li><code>document.querySelector('.classe-ou-tag')</code> (mais versátil)</li>
+            <li><code>document.querySelectorAll('tag')</code> (retorna uma lista de elementos)</li>
+        </ul>
+
+        <h3>Alterando Elementos:</h3>
+        <ul>
+            <li><b>Conteúdo:</b> <code>elemento.textContent = "Novo Texto";</code> ou <code>elemento.innerHTML = "<b>Novo HTML</b>";</code></li>
+            <li><b>Atributos:</b> <code>elemento.setAttribute('src', 'nova-imagem.jpg');</code></li>
+            <li><b>Estilo:</b> <code>elemento.style.color = 'red';</code></li>
+            <li><b>Classes CSS:</b> <code>elemento.classList.add('nova-classe');</code></li>
+        </ul>
+
+        <h3>Eventos (Reagindo à Interação do Usuário):</h3>
+        <p>O JavaScript permite que você reaja a ações do usuário, como cliques, digitação, movimento do mouse.</p>
+        <ul>
+            <li><b>Adicionar Ouvinte de Evento:</b> <code>elemento.addEventListener('click', function() { /* faça algo */ });</code></li>
+            <li><b>Eventos Comuns:</b> <code>click</code>, <code>mouseover</code>, <code>keydown</code>, <code>submit</code>, etc.</li>
+        </ul>
+
+        <h2>Como praticar?</h2>
+        <ul>
+            <li>Crie uma página com um botão que mude a cor do fundo da página ao ser clicado.</li>
+            <li>Faça uma lista de tarefas (To-Do List) onde você pode adicionar e remover itens.</li>
+            <li>Crie um contador simples que aumente ou diminua ao clicar em botões.</li>
+        </ul>
+
+        <p><i>"O DOM é o palco onde seu JavaScript realiza o show da interatividade."</i></p>
+
+
+        <div class="underButton">
+            <a href="../pages/javascript-fundamentos.html" class="back-button">&larr; Bloco anterior</a>
+            <a href="../pages/javascript-fundamentos-fim.html" class="forward-button">Próximo Bloco &rarr;</a>
+        </div>
+    </div>
+    <script src="../progress.js"></script>
+</body>
+</html>
