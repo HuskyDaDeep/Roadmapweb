@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Bloco 2: HTML e CSS',
             description: 'Aprenda a estruturar o conteúdo e estilizar suas páginas web.',
             logo: 'assets/logo-html.png',
-            page: 'pages/html-css.html'
+            page: 'pages/html-introducao.html'
         },
         {
             id: 'javascript-fundamentos',
@@ -31,8 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'proximos-passos',
             title: 'Bloco 4: Próximos Passos',
             description: 'Explore o que vem a seguir na sua jornada de desenvolvimento.',
-            logo: 'assets/logo-generica.png', // Uma logo genérica para futuros tópicos
-            page: 'pages/proximos-passos.html'
+            logo: 'assets/java.png', // Uma logo genérica para futuros tópicos
+            page: 'pages/backend-springboot-java.html'
+        },
+        {
+            id: 'Quiz',
+            title: 'Bloco Extra: Teste seu conhecimento',
+            description: 'Teste as suas habilidades para ver o quanto aprendeu.',
+            logo: 'assets/ChatGPT Image Jun 11, 2025, 06_01_00 PM.png',
+            page: 'pages/Quiz/index.html'
         }
     ];
 

@@ -43,6 +43,12 @@ body {
     margin-bottom: 15px;
     font-size: 2em;
 }
+#welcome-screen img {
+    max-width: 50vh;
+    
+}
+
+
 
 #welcome-screen p {
     color: #666;

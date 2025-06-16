@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Estilizando a Web</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="content-page">
+        <a href="../index.html" class="back-button">&larr; Voltar ao Roadmap</a>
+        <h1>CSS: Estilizando a Web</h1>
+
+        <h2>O Que É CSS?</h2>
+        <p>CSS, ou <b>Cascading Style Sheets</b>, é a linguagem utilizada para estilizar documentos escritos em HTML. Enquanto o HTML define a estrutura e o conteúdo, o CSS se encarrega de como esses elementos serão apresentados visualmente.</p>
+        <p>Pense no CSS como a maquiagem e as roupas do seu site. Ele controla cores, fontes, layouts, espaçamentos e muito mais, transformando um esqueleto básico em uma interface visualmente atraente e agradável.</p>
+
+        <h3>Como Aplicar CSS</h3>
+        <p>Existem três maneiras principais de incluir CSS em suas páginas:</p>
+        <ul>
+            <li><b>Inline:</b> Estilos aplicados diretamente em um elemento HTML usando o atributo <code>style</code> (geralmente não recomendado para grandes projetos).<br><code>&lt;p style="color: blue;"&gt;Este é um parágrafo azul.&lt;/p&gt;</code></li>
+            <li><b>Interno:</b> Estilos definidos dentro da tag <code>&lt;style&gt;</code> no <code>&lt;head&gt;</code> do documento HTML (bom para páginas únicas).<br>
+                <pre><code>&lt;head&gt;
+    &lt;style&gt;
+        h1 { color: green; }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+            </li>
+            <li><b>Externo:</b> Estilos definidos em um arquivo <code>.css</code> separado e linkado ao HTML (a forma mais comum e recomendada para projetos maiores).<br>
+                <pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="caminho/para/seu/estilo.css"&gt;
+&lt;/head&gt;</code></pre>
+            </li>
+        </ul>
+
+        <h3>Seletores e Propriedades</h3>
+        <p>O CSS funciona selecionando elementos HTML e aplicando <b>propriedades</b> e seus <b>valores</b> a eles.</p>
+        <ul>
+            <li><b>Seletores:</b>
+                <ul>
+                    <li>Por Tag: <code>p { ... }</code> (aplica a todos os parágrafos)</li>
+                    <li>Por ID: <code>#meuId { ... }</code> (aplica a um elemento com um ID específico)</li>
+                    <li>Por Classe: <code>.minhaClasse { ... }</code> (aplica a todos os elementos com essa classe)</li>
+                    <li>Combinadores: <code>div p { ... }</code> (parágrafos dentro de divs)</li>
+                </ul>
+            </li>
+            <li><b>Propriedades Comuns:</b>
+                <ul>
+                    <li><code>color</code>: Cor do texto.</li>
+                    <li><code>font-family</code>, <code>font-size</code>: Estilo e tamanho da fonte.</li>
+                    <li><code>background-color</code>, <code>background-image</code>: Cor ou imagem de fundo.</li>
+                    <li><code>margin</code>, <code>padding</code>: Espaçamento externo e interno de elementos.</li>
+                    <li><code>display</code>: Como um elemento é exibido (ex: <code>block</code>, <code>inline</code>, <code>flex</code>, <code>grid</code>).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>A Importância do CSS</h2>
+        <p>O CSS é vital para o desenvolvimento web moderno porque:</p>
+        <ul>
+            <li><b>Design e Experiência do Usuário (UX):</b> Transforma conteúdo bruto em interfaces bonitas e intuitivas.</li>
+            <li><b>Responsividade:</b> Permite que sites se adaptem a diferentes tamanhos de tela (desktops, tablets, celulares), garantindo uma boa experiência em qualquer dispositivo.</li>
+            <li><b>Manutenção:</b> Separar o estilo do conteúdo facilita a atualização e a manutenção do site.</li>
+            <li><b>Coerência Visual:</b> Garante que todos os elementos do site sigam um mesmo padrão de design.</li>
+        </ul>
+
+        <p><i>"Se o HTML é o corpo, o CSS é a alma que dá vida e beleza à sua página."</i></p>
+
+        <div class="underButton">
+            <a href="html-introducao.html" class="back-button">&larr; Bloco anterior: HTML</a>
+            <a href="html-css-importancia.html" class="forward-button">Próximo Bloco: HTML/CSS Juntos &rarr;</a>
+        </div>
+    </div>
+    <script src="../progress.js"></script>
+</body>
+</html>
