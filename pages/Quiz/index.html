@@ -1,23 +1,34 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap Dev - Quiz</title>
+
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
-    
 
-    <div id="roadmap-container" style="display: block;">
-        <header>
-            <h1>Teste Seu Conhecido</h1>
+    <div id="roadmap-container"> <header>
+            <h1>Teste Seu Conhecimento</h1>
             <p>Clique nos cards para ter acesso aos Quizes.</p>
         </header>
 
         <main class="card-grid">
             </main>
+    </div>
+
+    <div id="congratulations-screen" class="hidden congratulations-screen">
+        <div class="confetti-animation">
+            <div></div> <div></div> </div>
+        <h2>Parabéns!</h2>
+        <p>Você completou todos os quizzes do roadmap!</p>
+        <div class="congratulations-options">
+            <button id="back-to-roadmap-btn">Voltar ao Roadmap</button>
+            <a href="https://www.w3schools.com/" target="_blank" class="w3schools-link">
+                Ir para W3Schools
+            </a>
+        </div>
     </div>
 
     <script src="Cardrender.js"></script>

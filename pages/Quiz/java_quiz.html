@@ -6,6 +6,7 @@
     <title>Quiz de Java</title>
     <!-- Link para o ficheiro CSS comum para estilização -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <!-- O atributo data-quiz-type informa ao JavaScript qual quiz carregar -->
 <body data-quiz-type="java">
@@ -231,8 +232,14 @@
             <button id="restart-quiz-btn">
                 Reiniciar Quiz
             </button>
+            <button onclick="markBlockAsCompleted('quiz-Java')" type="submit" id="submit-quiz-btn">
+                Concluir
+            </button>
+            
+            
         </div>
     </div>
+    
     <div id="custom-alert-modal" class="modal-overlay hidden">
         <div class="modal-content">
             <p id="custom-alert-message"></p>
@@ -241,5 +248,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="/progress.js"></script>
 </body>
 </html>

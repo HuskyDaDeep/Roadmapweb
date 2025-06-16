@@ -577,3 +577,21 @@ body {
         font-size: 0.85rem;
     }
 }
+.results-section #submit-quiz-btn {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #4CAF50; /* Verde para marcar como concluído */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.results-section #submit-quiz-btn :hover{
+    background-color: #45a049;
+}
+

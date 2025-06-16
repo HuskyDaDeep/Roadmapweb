@@ -6,6 +6,7 @@
     <title>Quiz de HTML</title>
     <!-- Link para o ficheiro CSS comum para estilização -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <!-- O atributo data-quiz-type informa ao JavaScript qual quiz carregar -->
 <body data-quiz-type="html">
@@ -229,6 +230,9 @@
             <button id="restart-quiz-btn">
                 Reiniciar Quiz
             </button>
+            <button onclick="markBlockAsCompleted('quiz-Html')" type="submit" id="submit-quiz-btn">
+                Concluir
+            </button>
         </div>
     </div>
 
@@ -242,5 +246,6 @@
 
     <!-- Link para o ficheiro JavaScript comum que contém toda a lógica do quiz -->
     <script src="script.js"></script>
+    <script src="/progress.js"></script>
 </body>
 </html>

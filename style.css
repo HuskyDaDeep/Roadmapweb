@@ -292,3 +292,195 @@ body {
    width: 100%;
     
 }
+
+/* Estilos para a tela de parabéns */
+.congratulations-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('assets/v748-toon-106.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.congratulations-screen.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.congratulations-screen h2 {
+    font-size: 3em;
+    color: #28a745;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.congratulations-screen p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.congratulations-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.congratulations-options button,
+.congratulations-options .w3schools-link {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.congratulations-options button {
+    background-color: #007bff;
+    color: white;
+}
+
+.congratulations-options button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.congratulations-options .w3schools-link {
+    background-color: #f0c419;
+    color: #333;
+    font-weight: bold;
+}
+
+.congratulations-options .w3schools-link:hover {
+    background-color: #e0b000;
+    transform: translateY(-2px);
+}
+
+/* --- ANIMAÇÃO DE CONFETES SOMENTE COM CSS (EXPANDIDA) --- */
+/* Esta é uma simulação. Para confetes mais dinâmicos, JS é superior. */
+.confetti-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Para que os confetes não bloqueiem cliques */
+    z-index: -1; /* Mantenha atrás do conteúdo principal */
+}
+
+/* Gerando múltiplas "partículas" com pseudo-elementos encadeados */
+/* Cada pseudo-elemento representa um confete. Podemos ter vários deles */
+.confetti-animation::before,
+.confetti-animation::after,
+.congratulations-screen.visible .confetti-animation::before,
+.congratulations-screen.visible .confetti-animation::after,
+.confetti-animation > div::before,
+.confetti-animation > div::after,
+.confetti-animation > div > span::before,
+.confetti-animation > div > span::after,
+.confetti-animation > p::before,
+.confetti-animation > p::after {
+    content: '';
+    position: absolute;
+    width: 8px; /* Tamanho do confete */
+    height: 8px; /* Tamanho do confete */
+    border-radius: 50%; /* Confete redondo */
+    opacity: 0; /* Começa invisível */
+    animation: confettiFall 5s linear infinite; /* Animação de queda */
+    transform: translateY(0) rotate(0deg); /* Posição inicial */
+}
+
+/* Definições de cores, posições iniciais, atrasos e durações para cada "confete" */
+/* Quanto mais dessas regras, mais "confetes" visíveis você terá. */
+
+.confetti-animation::before {
+    background-color: #ff0; /* Amarelo */
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 4s;
+}
+
+.confetti-animation::after {
+    background-color: #f0f; /* Magenta */
+    left: 30%;
+    animation-delay: 0.5s;
+    animation-duration: 4.5s;
+}
+
+/* Novas regras para mais confetes */
+/* Estas dependem dos elementos vazios que adicionamos no HTML para o .confetti-animation */
+/* (Se você ainda não adicionou no HTML, veja o passo a seguir para o index.html) */
+
+.confetti-animation > div:nth-child(1)::before {
+    background-color: #0ff; /* Ciano */
+    left: 50%;
+    animation-delay: 1s;
+    animation-duration: 5s;
+}
+
+.confetti-animation > div:nth-child(1)::after {
+    background-color: #f80; /* Laranja */
+    left: 70%;
+    animation-delay: 1.5s;
+    animation-duration: 4.2s;
+}
+
+.confetti-animation > div:nth-child(2)::before {
+    background-color: #0f0; /* Verde */
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 3.8s;
+}
+
+.confetti-animation > div:nth-child(2)::after {
+    background-color: #00f; /* Azul */
+    left: 80%;
+    animation-delay: 2.5s;
+    animation-duration: 4.8s;
+}
+
+/* Se você adicionar mais divs ou spans dentro de .confetti-animation no HTML,
+   pode continuar adicionando regras como estas para aumentar a quantidade.
+   Ex: .confetti-animation > div:nth-child(3)::before { ... } */
+
+/* Chaveamento da animação de queda */
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1; /* Torna visível no início da queda */
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px)) rotate(720deg);
+        opacity: 0; /* Desaparece ao cair */
+    }
+}
+
+/* Classe de utilidade */
+.hidden {
+    display: none !important; /* Importante para garantir que o JS possa esconder */
+}

@@ -10,8 +10,9 @@ function markBlockAsCompleted(blockId) {
         alert(`Parabéns! Você completou o bloco: ${blockId}`);
 
         // Redireciona para a página inicial (ajuste o caminho conforme necessário)
-        window.location.href = '../index.html';
+        window.location.href = '../quiz/index.html';
     } else {
         alert('Este bloco já foi concluído!');
+        window.location.href = '../quiz/index.html';
     }
 }
