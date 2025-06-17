@@ -34,13 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             logo: '/assets/java.png',
             page: '../Quiz/java_quiz.html'
         },
-        {
-            id: 'Inicio', // Renomeado para 'quiz-Java' para clareza
-            title: 'Voltar ao Inicio',
-            description: 'Voltar para ao inicio e ver os blocos.',
-            logo: '/assets/ChatGPT Image Jun 11, 2025, 06_01_00 PM.png',
-            page: '/index.html'
-        },
     ];
 
     // Carrega o progresso salvo no localStorage
