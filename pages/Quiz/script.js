@@ -1,5 +1,4 @@
-require ('dotenv').config();
-const API_KEY = process.env.API_KEY;
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // === Seleção de Elementos DOM ===
