@@ -1,3 +1,6 @@
+require ('dotenv').config();
+const API_KEY = process.env.API_KEY;
+
 document.addEventListener('DOMContentLoaded', () => {
     // === Seleção de Elementos DOM ===
     const quizTitle = document.getElementById('quiz-title');
@@ -20,8 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const explanationsDiv = document.getElementById('explanations');
     const restartQuizBtn = document.getElementById('restart-quiz-btn');
     const navLinks = document.querySelectorAll('.nav-menu a');
-    require ('dotenv').config();
-    const API_KEY = process.env.API_KEY;
+
 
 
     // === Dados de Todos os Quizzes ===
