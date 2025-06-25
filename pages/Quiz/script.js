@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const explanationsDiv = document.getElementById('explanations');
     const restartQuizBtn = document.getElementById('restart-quiz-btn');
     const navLinks = document.querySelectorAll('.nav-menu a');
+    require ('dotenv').config();
+    const API_KEY = process.env.API_KEY;
 
 
     // === Dados de Todos os Quizzes ===
@@ -331,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let chatHistory = [];
             chatHistory.push({ role: "user", parts: [{ text: promptContent }] });
             const payload = { contents: chatHistory };
-            const apiKey = ""; // Deixe como está, a chave será fornecida em tempo de execução pelo ambiente
+            const apiKey = API_KEY; // Deixe como está, a chave será fornecida em tempo de execução pelo ambiente
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             console.log("A enviar pedido à API Gemini...");
